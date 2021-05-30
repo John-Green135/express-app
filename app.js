@@ -1,6 +1,7 @@
 const express = require('express');
 
 const app = express();
+console.log("Express App")
 
 app.get('/api', (req, res) => {
     res.send('Successful response.');
