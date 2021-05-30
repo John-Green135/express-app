@@ -1,12 +1,15 @@
 const express = require('express');
-
-console.log("Express App")
+const cors = require('cors')
 
 const app = express();
-console.log("Express App")
+app.use(express.json());
+app.use(express.urlencoded( {extended: true }) );
 
-app.get('/api', (req, res) => {
-    res.send('Successful response.');
-  });
+app.get('/', (req, res)=>{
+    console.log("hit")
+    res.send("message")
+})
 
   app.listen(3000, () => console.log('Example app is listening on port 3000.'));
+
+
