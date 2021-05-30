@@ -1,5 +1,7 @@
 const express = require('express');
 
+console.log("Express App")
+
 const app = express();
 
 app.get('/', (req, res) => {
