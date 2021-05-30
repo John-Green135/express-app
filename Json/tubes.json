@@ -1,0 +1,85 @@
+[
+    {
+        "Name": "Porn Hub", "Category": ["Mega Tube", "Trans"],
+        "Link": "https://www.pornhub.com/video/search?search=", "Concat": "+", "Suffix": "",
+        "Count": 0, "Display": ["Female"]
+    },
+
+    {
+        "Name": "XVideos", "Category": ["Mega Tube"],
+        "Link": "https://www.xvideos.com/?k=", "Concat": "+", "Suffix": "",
+        "Count": 0, "Display": ["Female"]
+    },
+
+    {
+        "Name": "XHamster", "Category": ["Mega Tube"], 
+        "Link": "https://xhamster.com/search/", "Concat": "+", "Suffix": "?orientations=straight",
+        "Count": 0, "Display": ["Female"]
+    },
+    {
+        "Name": "XHamster (Trans)", "Category": ["Trans"], 
+        "Link": "https://xhamster.com/search/", "Concat": "+", "Suffix": "?orientations=shemale",
+        "Count": 0, "Display": ["Female"]
+    },
+    {
+        "Name": "XHamster (Gay)", "Category": ["Gay"], 
+        "Link": "https://xhamster.com/search/", "Concat": "+", "Suffix": "?orientations=gay",
+        "Count": 0, "Display": ["Female"]
+    },
+
+    {
+        "Name": "XNXX", "Category": ["Mega Tube"],
+        "Link": "https://www.xnxx.com/search/", "Concat": "+", "Suffix": "",
+        "Count": 0, "Display": ["Female"]
+    },
+
+    {
+        "Name": "3 Movs", "Category": ["Mega Tube"], 
+        "Link": "https://www.3movs.com/search_videos/?q=", "Concat": "+", "Suffix": "",
+        "Count": 0, "Display": ["Female"]
+    },
+
+    {
+        "Name": "Porn HD", "Category": ["Mega Tube"], 
+        "Link": "https://www.pornhd.com/search?search=", "Concat": "+", "Suffix": "",
+        "Count": 0, "Display": ["Female"]
+    },
+
+    {
+        "Name": "Lesbian Porn Videos", "Category": ["Lesbian"], 
+        "Link": "https://www.lesbianpornvideos.com/tags/video/", "Concat": "+", "Suffix": "",
+        "Count": 0, "Display": ["none"]
+    },
+
+
+    {
+        "Name": "A Shemale Tube", "Category": ["Trans"],
+        "Link": "https://www.ashemaletube.com/search/", "Concat": " ", "Suffix": "/?sort=re",
+        "Count": 3, "Display": ["Trans"]
+    },
+
+    {
+        "Name": "Home Movies Tube", "Category": ["Amateur"], 
+        "Link": "https://www.homemoviestube.com/search/", "Concat": "-", "Suffix": "/page1.html",
+        "Count": 0, "Display": ["none"]
+     },
+
+    {
+        "Name": "HClips", "Category": ["Amateur"], 
+        "Link": "https://hclips.com/search/1/?s=", "Concat": " ", "Suffix": "&sort=latest-updates&date=day&type=all",
+        "Count": 0, "Display": ["none"]
+    },
+
+    {
+        "Name": "XTube", "Category": ["Amateur"], 
+        "Link": "https://www.xtube.com/search/video/", "Concat": " ", "Suffix": "",
+        "Count": 0, "Display": ["none"]
+    },
+
+    {
+        "Name": "Pic Hunter", "Category": ["Images", "Photo Sets"], 
+        "Link": "https://www.pichunter.com/search/", "Concat": " ", "Suffix": "",
+        "Count": 0, "Display": ["none"]
+    }
+
+]

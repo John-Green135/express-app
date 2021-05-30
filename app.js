@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors')
+const Tubes = require('./Json/tubes.json')
 
 const app = express();
 app.use(express.json());
@@ -19,7 +20,8 @@ mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true})
     })
 
 app.get('/', cors(), (req, res)=>{
-    ChaturbateScrape(req, res)
+    res.json(Tubes)
+    //ChaturbateScrape(req, res)
     //res.json({message:"message"})
 })
 
