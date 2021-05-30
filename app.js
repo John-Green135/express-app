@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors')
 const Tubes = require('./Json/tubes.json')
+const Blog = require('./Mongoose/Main')
 
 const app = express();
 app.use(express.json());
@@ -19,8 +20,29 @@ mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true})
         console.log(err)
     })
 
-app.get('/', cors(), (req, res)=>{
-    res.json(Tubes)
+    const getBlogs = async(req, res)=>{
+        let data = await Blog.find({})
+        res.json(data)
+    }
+
+app.get('/submit-posts', cors(), (req, res)=>{
+    const post = new Blog({
+        title: "First Blog",
+        snippet: "Quick snippet of blog",
+        body: "This is the body of my new blog post"
+    })
+    post.save()
+    .then(result=>{
+        res.send(result)
+    })
+    .catch( (err)=>{
+        console.log(err)
+    })
+})
+
+app.get('/get-posts', cors(), (req, res)=>{
+    
+    getBlogs(req, res)
     //ChaturbateScrape(req, res)
     //res.json({message:"message"})
 })
