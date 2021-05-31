@@ -20,6 +20,9 @@ mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true})
     const TubesRouter = require('./Routes/Tubes/TubesRouter');
     app.use('/tubes', TubesRouter);
 
+    const WebcamsRouter = require('./Routes/Webcams/WebcamsRouter');
+    app.use('/webcams', WebcamsRouter);
+
 
 
 

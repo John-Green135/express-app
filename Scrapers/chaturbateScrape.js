@@ -7,11 +7,10 @@ const fetchData = async(url)=>{
     return response
 }
 
-const ChaturbateScrape = (req, res)=>{
+const ChaturbateScrape = async (req, res)=>{
     let path = `https://chaturbate.com/` 
-    console.log(req.query)
-    fetchData(path) 
-    .then(body=>{
+    let body = await fetchData(path)
+
         let $ = cheerio.load(body)
         let dataList = []
         let tagList = []
@@ -33,14 +32,15 @@ const ChaturbateScrape = (req, res)=>{
             dataList.push(data)
         })
 
-        if(dataList.length > 100){
-            dataList.length = 100
+        if(dataList.length > 30){
+            dataList.length = 30
         }
-        res.json({
-            dataList: dataList,
-            tags: tagList
-        })
-    })
+
+        return {
+            dataList,
+            tagList
+        }
+
 }
 
 const getPath = (queries) =>{
