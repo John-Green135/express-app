@@ -7,8 +7,8 @@ const fetchData = async(url)=>{
     return response
 }
 
-const ChaturbateScrape = async (req, res)=>{
-    let path = `https://chaturbate.com/` 
+const ChaturbateScrape = async (queries)=>{
+    let path = `https://chaturbate.com/${getPath(queries)}` 
     let body = await fetchData(path)
 
         let $ = cheerio.load(body)

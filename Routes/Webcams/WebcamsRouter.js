@@ -6,7 +6,7 @@ const Tubes = require('../../Json/tubes.json')
 const ChaturbateScrape = require('../../Scrapers/chaturbateScrape')
 
 router.get('/', cors(), (req, res)=>{
-   ChaturbateScrape(req, res).then(value=>{
+   ChaturbateScrape(req.query).then(value=>{
         res.json(value)
    })
 })
