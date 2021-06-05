@@ -19,12 +19,12 @@
     {
         "Name": "XHamster (Trans)", "Category": ["Trans"], 
         "Link": "https://xhamster.com/search/", "Concat": "+", "Suffix": "?orientations=shemale",
-        "Count": 0, "Display": ["Female"]
+        "Count": 0, "Display": ["Trans"]
     },
     {
         "Name": "XHamster (Gay)", "Category": ["Gay"], 
         "Link": "https://xhamster.com/search/", "Concat": "+", "Suffix": "?orientations=gay",
-        "Count": 0, "Display": ["Female"]
+        "Count": 0, "Display": ["Gay"]
     },
 
     {

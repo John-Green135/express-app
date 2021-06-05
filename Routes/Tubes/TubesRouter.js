@@ -35,4 +35,16 @@ router.get('/', cors(), (req, res)=>{
     res.json(data)
   })
 
+  router.get("/model-profile", cors(), (req, res)=>{
+      let tubeList = []
+      Tubes.forEach(tube=>{
+        if(tube.Display.includes(req.query.gender)){
+            tubeList.push(tube)
+        }
+      })
+      res.json({
+          tubes: tubeList
+      })
+  })
+
   module.exports = router;
